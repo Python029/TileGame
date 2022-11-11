@@ -32,27 +32,27 @@ namespace TileGame
         {
             if (S1.Text.Length == 3)
             {
-                S1.Location = new Point(173, 105);
+                S1.Location = new Point(332, 105);
             }
             if (S2.Text.Length == 3)
             {
-                S2.Location = new Point(173, 168);
+                S2.Location = new Point(332, 168);
             }
             if (S3.Text.Length == 3)
             {    
-                S3.Location = new Point(173, 228);
+                S3.Location = new Point(332, 228);
             }
-            if (A1.Text.Length == 5)
+            if (A1.Text.Length == 6)
             {
-                A1.Location = new Point(329, 105);
+                A1.Location = new Point(496, 105);
             }
-            if (A2.Text.Length == 5)
+            if (A2.Text.Length == 6)
             {
-                A2.Location = new Point(329, 168);
+                A2.Location = new Point(496, 168);
             }
-            if (A3.Text.Length == 5)
+            if (A3.Text.Length == 6)
             {
-                A3.Location = new Point(329, 228);
+                A3.Location = new Point(496, 228);
             }
         }
     }

@@ -40,6 +40,10 @@
             this.A3 = new System.Windows.Forms.Label();
             this.S3 = new System.Windows.Forms.Label();
             this.A2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // label1
@@ -56,7 +60,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Hurme Geometric Sans 1", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(175, 73);
+            this.label2.Location = new System.Drawing.Point(321, 73);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(53, 21);
             this.label2.TabIndex = 1;
@@ -76,7 +80,7 @@
             // 
             this.S1.AutoSize = true;
             this.S1.Font = new System.Drawing.Font("Hurme Geometric Sans 1", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.S1.Location = new System.Drawing.Point(186, 105);
+            this.S1.Location = new System.Drawing.Point(332, 105);
             this.S1.Name = "S1";
             this.S1.Size = new System.Drawing.Size(31, 35);
             this.S1.TabIndex = 4;
@@ -86,7 +90,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Hurme Geometric Sans 1", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(336, 73);
+            this.label7.Location = new System.Drawing.Point(482, 73);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(81, 21);
             this.label7.TabIndex = 6;
@@ -116,7 +120,7 @@
             // 
             this.S2.AutoSize = true;
             this.S2.Font = new System.Drawing.Font("Hurme Geometric Sans 1", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.S2.Location = new System.Drawing.Point(186, 168);
+            this.S2.Location = new System.Drawing.Point(332, 168);
             this.S2.Name = "S2";
             this.S2.Size = new System.Drawing.Size(31, 35);
             this.S2.TabIndex = 9;
@@ -126,7 +130,7 @@
             // 
             this.A1.AutoSize = true;
             this.A1.Font = new System.Drawing.Font("Hurme Geometric Sans 1", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A1.Location = new System.Drawing.Point(350, 105);
+            this.A1.Location = new System.Drawing.Point(496, 105);
             this.A1.Name = "A1";
             this.A1.Size = new System.Drawing.Size(52, 35);
             this.A1.TabIndex = 10;
@@ -136,7 +140,7 @@
             // 
             this.A3.AutoSize = true;
             this.A3.Font = new System.Drawing.Font("Hurme Geometric Sans 1", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A3.Location = new System.Drawing.Point(350, 228);
+            this.A3.Location = new System.Drawing.Point(496, 228);
             this.A3.Name = "A3";
             this.A3.Size = new System.Drawing.Size(52, 35);
             this.A3.TabIndex = 11;
@@ -146,7 +150,7 @@
             // 
             this.S3.AutoSize = true;
             this.S3.Font = new System.Drawing.Font("Hurme Geometric Sans 1", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.S3.Location = new System.Drawing.Point(186, 228);
+            this.S3.Location = new System.Drawing.Point(332, 228);
             this.S3.Name = "S3";
             this.S3.Size = new System.Drawing.Size(31, 35);
             this.S3.TabIndex = 12;
@@ -156,18 +160,62 @@
             // 
             this.A2.AutoSize = true;
             this.A2.Font = new System.Drawing.Font("Hurme Geometric Sans 1", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.A2.Location = new System.Drawing.Point(350, 168);
+            this.A2.Location = new System.Drawing.Point(496, 168);
             this.A2.Name = "A2";
             this.A2.Size = new System.Drawing.Size(52, 35);
             this.A2.TabIndex = 13;
             this.A2.Text = "0%";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Hurme Geometric Sans 1", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(161, 73);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(59, 21);
+            this.label3.TabIndex = 14;
+            this.label3.Text = "Initials";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Hurme Geometric Sans 1", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(155, 105);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(73, 35);
+            this.label5.TabIndex = 15;
+            this.label5.Text = "AAA";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Font = new System.Drawing.Font("Hurme Geometric Sans 1", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.Location = new System.Drawing.Point(155, 228);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(73, 35);
+            this.label6.TabIndex = 16;
+            this.label6.Text = "AAA";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Hurme Geometric Sans 1", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.Location = new System.Drawing.Point(155, 168);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(73, 35);
+            this.label10.TabIndex = 17;
+            this.label10.Text = "AAA";
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.LightGreen;
-            this.ClientSize = new System.Drawing.Size(459, 300);
+            this.ClientSize = new System.Drawing.Size(589, 300);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.A2);
             this.Controls.Add(this.S3);
             this.Controls.Add(this.A3);
@@ -204,5 +252,9 @@
         private System.Windows.Forms.Label A3;
         private System.Windows.Forms.Label S3;
         private System.Windows.Forms.Label A2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label10;
     }
 }
