@@ -91,6 +91,8 @@ namespace TileGame
                 this.Controls.Add(box5);
                 #endregion
                 #endregion
+                //Properties.Settings.Default.Font = false;
+                //Properties.Settings.Default.Save();
             }
             else
             {
