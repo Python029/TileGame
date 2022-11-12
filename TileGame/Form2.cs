@@ -16,7 +16,6 @@ namespace TileGame
         {
             InitializeComponent();
         }
-
         private void Form2_Load(object sender, EventArgs e)
         {
             T1.Text = Properties.Settings.Default.First_T.ToString();
@@ -60,6 +59,7 @@ namespace TileGame
             else if(e.KeyCode == Keys.Oemtilde)
             {
                 Properties.Settings.Default.Reset();
+                Properties.Settings.Default.Font = true;
                 Properties.Settings.Default.Save();
                 MessageBox.Show("Scores Reset");
                 ResetLabels();

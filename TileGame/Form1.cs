@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
+using System.Drawing.Text;
 
 namespace TileGame
 {
@@ -45,7 +47,9 @@ namespace TileGame
         double score = 0;
         private void Form1_Load(object sender, EventArgs e)
         {
-            #region Add Boxes
+            if(Properties.Settings.Default.Font)
+            {
+                #region Add Boxes
                 #region Box 1
                 box1.Size = new Size(150, 150);
                 box1.Location = new Point(160, -160);
@@ -86,7 +90,67 @@ namespace TileGame
                 box5.BackColor = Color.Red;
                 this.Controls.Add(box5);
                 #endregion
-             #endregion
+                #endregion
+            }
+            else
+            {
+                DialogResult dialogResult = MessageBox.Show($"Please make sure to install this font before continuing: Hurme Geometric Sans 1 Bold\nIf the font is installed, click Yes. If not, click No.\nIf you would like to continue without the designated font, Click Cancel.", "Font Required", MessageBoxButtons.YesNoCancel);
+                if (dialogResult == DialogResult.Yes)
+                {
+                    Properties.Settings.Default.Font = true;
+                    Properties.Settings.Default.Save();
+                    Application.Restart();
+                }
+                else if (dialogResult == DialogResult.No)
+                {
+                    Application.Exit();
+                }
+                else if (dialogResult == DialogResult.Cancel)
+                {
+                    #region Add Boxes
+                    #region Box 1
+                    box1.Size = new Size(150, 150);
+                    box1.Location = new Point(160, -160);
+                    x1 = box1.Location.X;
+                    y1 = box1.Location.Y;
+                    box1.BackColor = Color.Red;
+                    this.Controls.Add(box1);
+                    #endregion
+                    #region Box 2
+                    box2.Size = new Size(150, 150);
+                    box2.Location = new Point(0, 0);
+                    x2 = box2.Location.X;
+                    y2 = box2.Location.Y;
+                    box2.BackColor = Color.Red;
+                    this.Controls.Add(box2);
+                    #endregion
+                    #region Box 3
+                    box3.Size = new Size(150, 150);
+                    box3.Location = new Point(320, 160);
+                    x3 = box3.Location.X;
+                    y3 = box3.Location.Y;
+                    box3.BackColor = Color.Red;
+                    this.Controls.Add(box3);
+                    #endregion
+                    #region Box 4
+                    box4.Size = new Size(150, 150);
+                    box4.Location = new Point(480, 320);
+                    x4 = box4.Location.X;
+                    y4 = box4.Location.Y;
+                    box4.BackColor = Color.Red;
+                    this.Controls.Add(box4);
+                    #endregion
+                    #region Box 5 
+                    box5.Size = new Size(150, 150);
+                    box5.Location = new Point(160, 480);
+                    x5 = box5.Location.X;
+                    y5 = box5.Location.Y;
+                    box5.BackColor = Color.Red;
+                    this.Controls.Add(box5);
+                    #endregion
+                    #endregion
+                }
+            }
         }
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
@@ -127,8 +191,7 @@ namespace TileGame
                     f2.ShowDialog();
                 }
             }
-        }
-        
+        }        
         private void Endgame()
         {
             total = correct + incorrect;
