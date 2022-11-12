@@ -26,12 +26,12 @@ namespace TileGame.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int First_S {
+        public int First_T {
             get {
-                return ((int)(this["First_S"]));
+                return ((int)(this["First_T"]));
             }
             set {
-                this["First_S"] = value;
+                this["First_T"] = value;
             }
         }
         
@@ -50,12 +50,12 @@ namespace TileGame.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int Second_S {
+        public int Second_T {
             get {
-                return ((int)(this["Second_S"]));
+                return ((int)(this["Second_T"]));
             }
             set {
-                this["Second_S"] = value;
+                this["Second_T"] = value;
             }
         }
         
@@ -74,12 +74,12 @@ namespace TileGame.Properties {
         [global::System.Configuration.UserScopedSettingAttribute()]
         [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
         [global::System.Configuration.DefaultSettingValueAttribute("0")]
-        public int Third_S {
+        public int Third_T {
             get {
-                return ((int)(this["Third_S"]));
+                return ((int)(this["Third_T"]));
             }
             set {
-                this["Third_S"] = value;
+                this["Third_T"] = value;
             }
         }
         
@@ -140,6 +140,42 @@ namespace TileGame.Properties {
             }
             set {
                 this["Initials"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public double First_S {
+            get {
+                return ((double)(this["First_S"]));
+            }
+            set {
+                this["First_S"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public double Second_S {
+            get {
+                return ((double)(this["Second_S"]));
+            }
+            set {
+                this["Second_S"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("0")]
+        public double Third_S {
+            get {
+                return ((double)(this["Third_S"]));
+            }
+            set {
+                this["Third_S"] = value;
             }
         }
     }
