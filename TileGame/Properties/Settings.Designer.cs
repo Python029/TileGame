@@ -94,5 +94,53 @@ namespace TileGame.Properties {
                 this["Third_A"] = value;
             }
         }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("AAA")]
+        public string First_N {
+            get {
+                return ((string)(this["First_N"]));
+            }
+            set {
+                this["First_N"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("AAA")]
+        public string Second_N {
+            get {
+                return ((string)(this["Second_N"]));
+            }
+            set {
+                this["Second_N"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("AAA")]
+        public string Third_N {
+            get {
+                return ((string)(this["Third_N"]));
+            }
+            set {
+                this["Third_N"] = value;
+            }
+        }
+        
+        [global::System.Configuration.UserScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.DefaultSettingValueAttribute("")]
+        public string Initials {
+            get {
+                return ((string)(this["Initials"]));
+            }
+            set {
+                this["Initials"] = value;
+            }
+        }
     }
 }

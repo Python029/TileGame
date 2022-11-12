@@ -41,6 +41,7 @@
             this.label4 = new System.Windows.Forms.Label();
             this.lblTime = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.label5 = new System.Windows.Forms.Label();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -122,6 +123,7 @@
             // 
             // panel4
             // 
+            this.panel4.Controls.Add(this.label5);
             this.panel4.Controls.Add(this.label4);
             this.panel4.Location = new System.Drawing.Point(168, 189);
             this.panel4.Name = "panel4";
@@ -132,7 +134,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Hurme Geometric Sans 1", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(35, 53);
+            this.label4.Location = new System.Drawing.Point(35, 1);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(249, 96);
             this.label4.TabIndex = 0;
@@ -154,6 +156,17 @@
             // 
             this.timer1.Interval = 1000;
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Hurme Geometric Sans 1", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Location = new System.Drawing.Point(9, 90);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(281, 96);
+            this.label5.TabIndex = 1;
+            this.label5.Text = "Press \"A\" \r\nto View Scores\r\n";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1
             // 
@@ -197,6 +210,7 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lblTime;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.Label label5;
     }
 }
 

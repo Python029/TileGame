@@ -34,6 +34,7 @@ namespace TileGame
         int incorrect = 0;
         bool hs = false;
         Form2 f2 = new Form2();
+        Form3 f3 = new Form3();
         Label box1 = new Label();
         Label box2 = new Label();
         Label box3 = new Label();
@@ -42,8 +43,8 @@ namespace TileGame
         double total = 0;
         double accuracy = 0;
         private void Form1_Load(object sender, EventArgs e)
-        { 
-             #region Add Boxes
+        {
+            #region Add Boxes
                 #region Box 1
                 box1.Size = new Size(150, 150);
                 box1.Location = new Point(160, -160);
@@ -84,7 +85,7 @@ namespace TileGame
                 box5.BackColor = Color.Red;
                 this.Controls.Add(box5);
                 #endregion
-                #endregion
+             #endregion
         }
         private void Form1_KeyDown(object sender, KeyEventArgs e)
         {
@@ -119,6 +120,10 @@ namespace TileGame
                     panel4.Location = new Point(-500,-500);
                     MoveBoxes();
                     timer1.Enabled = true;
+                }
+                else if(e.KeyCode==Keys.A)
+                {
+                    f2.ShowDialog();
                 }
             }
         }
@@ -502,15 +507,17 @@ namespace TileGame
             {
                 Properties.Settings.Default.Third_S = Properties.Settings.Default.Second_S;
                 Properties.Settings.Default.Third_A = Properties.Settings.Default.Second_A;
+                Properties.Settings.Default.Third_N = Properties.Settings.Default.Second_N;
                 Properties.Settings.Default.Second_S = Properties.Settings.Default.First_S;
                 Properties.Settings.Default.Second_A = Properties.Settings.Default.First_A;
+                Properties.Settings.Default.Second_N = Properties.Settings.Default.First_N;
                 Properties.Settings.Default.First_S = correct;
-                Properties.Settings.Default.First_A = accuracy;
+                Properties.Settings.Default.First_A = accuracy;                
                 Properties.Settings.Default.Save();
                 DialogResult dialogResult = MessageBox.Show($"You acheived a new highscore.\nYou correctly got {correct} boxes.\nYou had an accuracy of {accuracy}%\nDo you want to see the leaderboard?", "Game Over", MessageBoxButtons.YesNo);
                 if (dialogResult == DialogResult.Yes)
                 {
-                    f2.ShowDialog();
+                    f3.ShowDialog();
                     hs = true;
                 }
                 else if (dialogResult == DialogResult.No)
@@ -525,11 +532,13 @@ namespace TileGame
                 Properties.Settings.Default.Third_A = Properties.Settings.Default.Second_A;
                 Properties.Settings.Default.Second_S = correct;
                 Properties.Settings.Default.Second_A = accuracy;
+                Properties.Settings.Default.Second_N = Properties.Settings.Default.Initials;
+                Properties.Settings.Default.Initials = "";
                 Properties.Settings.Default.Save();
                 DialogResult dialogResult = MessageBox.Show($"You got the second highest score.\nYou correctly got {correct} boxes.\nYou had an accuracy of {accuracy}%\nDo you want to see the leaderboard?", "Game Over", MessageBoxButtons.YesNo);
                 if (dialogResult == DialogResult.Yes)
                 {
-                    f2.ShowDialog();
+                    f3.ShowDialog();
                     hs = true;
                 }
                 else if (dialogResult == DialogResult.No)
@@ -541,11 +550,13 @@ namespace TileGame
             {
                 Properties.Settings.Default.Third_S = correct;
                 Properties.Settings.Default.Third_A = accuracy;
+                Properties.Settings.Default.Third_N = Properties.Settings.Default.Initials;
+                Properties.Settings.Default.Initials = "";
                 Properties.Settings.Default.Save();
                 DialogResult dialogResult = MessageBox.Show($"You got the third highest score.\nYou correctly got {correct} boxes.\nYou had an accuracy of {accuracy}%\nDo you want to see the leaderboard?", "Game Over", MessageBoxButtons.YesNo);
                 if (dialogResult == DialogResult.Yes)
                 {
-                    f2.ShowDialog();
+                    f3.ShowDialog();
                     hs = true;
                 }
                 else if (dialogResult == DialogResult.No)

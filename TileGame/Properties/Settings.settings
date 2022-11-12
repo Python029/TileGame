@@ -20,5 +20,17 @@
     <Setting Name="Third_A" Type="System.Double" Scope="User">
       <Value Profile="(Default)">0</Value>
     </Setting>
+    <Setting Name="First_N" Type="System.String" Scope="User">
+      <Value Profile="(Default)">AAA</Value>
+    </Setting>
+    <Setting Name="Second_N" Type="System.String" Scope="User">
+      <Value Profile="(Default)">AAA</Value>
+    </Setting>
+    <Setting Name="Third_N" Type="System.String" Scope="User">
+      <Value Profile="(Default)">AAA</Value>
+    </Setting>
+    <Setting Name="Initials" Type="System.String" Scope="User">
+      <Value Profile="(Default)" />
+    </Setting>
   </Settings>
 </SettingsFile>
