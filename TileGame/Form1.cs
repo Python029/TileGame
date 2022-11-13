@@ -26,22 +26,13 @@ namespace TileGame
         int x4 = 0; int y4 = 0;
         int x5 = 0; int y5 = 0;
         int time = 30;
-        bool b1=false;
-        bool b2=false;
-        bool b3=false;
-        bool b4=false;
-        bool b5=false;
+        bool b1=false; bool b2=false; bool b3=false; bool b4=false; bool b5=false;
         bool start = false;
         int correct = 0;
         int incorrect = 0;
         bool hs = false;
-        Form2 f2 = new Form2();
-        Form3 f3 = new Form3();
-        Label box1 = new Label();
-        Label box2 = new Label();
-        Label box3 = new Label();
-        Label box4 = new Label();
-        Label box5 = new Label();
+        Form2 f2 = new Form2(); Form3 f3 = new Form3();   
+        Label box1 = new Label(); Label box2 = new Label(); Label box3 = new Label(); Label box4 = new Label(); Label box5 = new Label();
         double total = 0;
         double accuracy = 0;
         double score = 0;
@@ -91,8 +82,6 @@ namespace TileGame
                 this.Controls.Add(box5);
                 #endregion
                 #endregion
-                //Properties.Settings.Default.Font = false;
-                //Properties.Settings.Default.Save();
             }
             else
             {
@@ -202,7 +191,7 @@ namespace TileGame
             Highscore();
             if (hs == false)
             {
-                DialogResult dialogResult = MessageBox.Show($"You correctly got {correct} boxes.\nYou had an accuracy of {accuracy}%", "Game Over", MessageBoxButtons.YesNo);
+                DialogResult dialogResult = MessageBox.Show($"You correctly got {correct} boxes.\nYou had an accuracy of {accuracy}%\nYour score was {score}\nWould you like to play again?", "Game Over", MessageBoxButtons.YesNo);
                 if (dialogResult == DialogResult.Yes)
                 {
                     Application.Restart();
@@ -583,17 +572,9 @@ namespace TileGame
                 Properties.Settings.Default.First_A = accuracy;
                 Properties.Settings.Default.First_S = score;
                 Properties.Settings.Default.Save();
-                DialogResult dialogResult = MessageBox.Show($"You acheived a new highscore.\nYou correctly got {correct} boxes.\nYou had an accuracy of {accuracy}%\nDo you want to see the leaderboard?", "Game Over", MessageBoxButtons.YesNo);
-                if (dialogResult == DialogResult.Yes)
-                {
-                    f3.ShowDialog();
-                    hs = true;
-                }
-                else if (dialogResult == DialogResult.No)
-                {
-                    Application.Exit();
-                }
-                
+                MessageBox.Show($"You acheived a new highscore.\nYou correctly got {correct} boxes.\nYou had an accuracy of {accuracy}%\nYour score was {score}", "Game Over");
+                f3.ShowDialog();
+                hs = true;
             }
             else if (score > Properties.Settings.Default.Second_S && score < Properties.Settings.Default.First_S)
             {
@@ -605,16 +586,9 @@ namespace TileGame
                 Properties.Settings.Default.Second_A = accuracy;
                 Properties.Settings.Default.Second_S = score;
                 Properties.Settings.Default.Save();
-                DialogResult dialogResult = MessageBox.Show($"You got the second highest score.\nYou correctly got {correct} boxes.\nYou had an accuracy of {accuracy}%\nDo you want to see the leaderboard?", "Game Over", MessageBoxButtons.YesNo);
-                if (dialogResult == DialogResult.Yes)
-                {
-                    f3.ShowDialog();
-                    hs = true;
-                }
-                else if (dialogResult == DialogResult.No)
-                {
-                    Application.Exit();
-                }
+                MessageBox.Show($"You got the second highest score.\nYou correctly got {correct} boxes.\nYou had an accuracy of {accuracy}%\nYour score was {score}", "Game Over");                
+                f3.ShowDialog();
+                hs = true;
             }
             else if (score > Properties.Settings.Default.Third_S && score < Properties.Settings.Default.Second_S)
             {
@@ -622,16 +596,9 @@ namespace TileGame
                 Properties.Settings.Default.Third_A = accuracy;
                 Properties.Settings.Default.Third_S = score;
                 Properties.Settings.Default.Save();
-                DialogResult dialogResult = MessageBox.Show($"You got the third highest score.\nYou correctly got {correct} boxes.\nYou had an accuracy of {accuracy}%\nDo you want to see the leaderboard?", "Game Over", MessageBoxButtons.YesNo);
-                if (dialogResult == DialogResult.Yes)
-                {
-                    f3.ShowDialog();
-                    hs = true;
-                }
-                else if (dialogResult == DialogResult.No)
-                {
-                    Application.Exit();
-                }
+                MessageBox.Show($"You got the third highest score.\nYou correctly got {correct} boxes.\nYou had an accuracy of {accuracy}%\nYour score was {score}", "Game Over");
+                f3.ShowDialog();
+                hs = true;
             }
         }
     }

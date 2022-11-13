@@ -35,7 +35,7 @@ namespace TileGame
                 Properties.Settings.Default.Initials = "";
                 Properties.Settings.Default.Save();
                 f2.ShowDialog();
-                this.Close();         
+                this.Close();                   
             }
         }
     }
