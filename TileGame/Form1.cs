@@ -558,7 +558,7 @@ namespace TileGame
         }
         private void Highscore()
         {
-            if(score > Properties.Settings.Default.First_S)
+            if(score >= Properties.Settings.Default.First_S)
             {
                 Properties.Settings.Default.Third_T = Properties.Settings.Default.Second_T;
                 Properties.Settings.Default.Third_A = Properties.Settings.Default.Second_A;
@@ -576,7 +576,7 @@ namespace TileGame
                 f3.ShowDialog();
                 hs = true;
             }
-            else if (score > Properties.Settings.Default.Second_S && score < Properties.Settings.Default.First_S)
+            else if (score >= Properties.Settings.Default.Second_S && score < Properties.Settings.Default.First_S)
             {
                 Properties.Settings.Default.Third_T = Properties.Settings.Default.Second_T;
                 Properties.Settings.Default.Third_A = Properties.Settings.Default.Second_A;
@@ -590,7 +590,7 @@ namespace TileGame
                 f3.ShowDialog();
                 hs = true;
             }
-            else if (score > Properties.Settings.Default.Third_S && score < Properties.Settings.Default.Second_S)
+            else if (score >= Properties.Settings.Default.Third_S && score < Properties.Settings.Default.Second_S)
             {
                 Properties.Settings.Default.Third_T = correct;
                 Properties.Settings.Default.Third_A = accuracy;
