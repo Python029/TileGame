@@ -82,10 +82,12 @@ namespace TileGame
                 this.Controls.Add(box5);
                 #endregion
                 #endregion
+                //Properties.Settings.Default.Font = false;
+                //Properties.Settings.Default.Save();
             }
             else
             {
-                DialogResult dialogResult = MessageBox.Show($"Please make sure to install this font before continuing: Hurme Geometric Sans 1 Bold\nIf the font is installed, click Yes. If not, click No.\nIf you would like to continue without the designated font, Click Cancel.", "Font Required", MessageBoxButtons.YesNoCancel);
+                DialogResult dialogResult = MessageBox.Show($"Please make sure to install this font before continuing:\nHurme Geometric Sans 1 Bold\nIf the font is installed, click Yes. If not, click No.\nIf you would like to continue without the designated font, Click Cancel.", "Font Required", MessageBoxButtons.YesNoCancel);
                 if (dialogResult == DialogResult.Yes)
                 {
                     Properties.Settings.Default.Font = true;

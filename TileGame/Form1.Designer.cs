@@ -135,7 +135,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Hurme Geometric Sans 1", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(9, 90);
+            this.label5.Location = new System.Drawing.Point(9, 91);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(281, 96);
             this.label5.TabIndex = 1;
